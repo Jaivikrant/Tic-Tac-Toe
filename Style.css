@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue: #f2c14e;
+    --winning-blocks:#2d414b;
+}
+body{
+    color: var(--blue);
+    font-family: 'Finger Paint', cursive;
+}
+h1{
+    font-size: 60px;
+    text-transform: capitalize;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 25px;
+    flex-direction: column;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--blue);
+    border: none;
+    font-size: 18px;
+    transition: 200ms transform;
+    color:#2d414b;
+    font-weight: 600;
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+#gameboard{
+    width: 300px;
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+}
+.box{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+    font-size: 120px;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+.box:nth-child(1){
+    border-left: none;
+}
+.box:nth-child(4){
+    border-left: none;
+}
+.box:nth-child(7){
+    border-left: none;
+}
+.box:nth-child(1){
+    border-top: none;
+}
+.box:nth-child(2){
+    border-top: none;
+}
+.box:nth-child(3){
+    border-top: none;
+}
